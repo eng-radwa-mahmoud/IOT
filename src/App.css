@@ -7,22 +7,47 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  background-image: url("../public/s3.jpg");
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 48.5px;
+  color: chocolate;
+  font-weight: bold;
+  
+
+  
 }
+
+.App-header :hover
+{
+color: rgb(9, 165, 87);
+transition: 0.5s;
+transform: scale(1.1);
+}
+
+.background-image {
+  
+  background-image: url("../public/s3.jpg");
+  
+  height: 803px;
+  position: absolute;
+  z-index: -1;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 815px;
+}
+
+
 
 .App-link {
   color: #61dafb;
